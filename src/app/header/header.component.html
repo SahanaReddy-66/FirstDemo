@@ -1,0 +1,38 @@
+<div class="row one">
+    <div class="col"><button (click)="headerone()">Header</button></div>
+    <div class="col"><button (click)="Intro()">Introduction</button></div>
+    <div class="col"><button (click)="Register()">Register</button></div>
+    <div class="col" (click)="Contact()"><button>Contact Us </button></div>
+    <div class="col" (click)="Footer()"><button>footer </button></div>
+    <div class="col" (click)="looping()"><button>looping </button></div>
+    <div class="col" (click)="work()"><button>work </button></div>
+</div>
+<div class="row space" >
+    <div class="col-2 space" style="background-color: aqua;" *ngIf="lefshow">
+        <div class="col space">CSS</div>
+        <div class="col space">JAVASCRIPT</div>
+        <div class="col space">TYPESCRIPT</div>
+        <div class="col space">ANGULAR</div>
+        <div class="col space">ANGULAR</div>
+    </div>
+    <div class="col-8" *ngIf="midshow">
+        <br> <br> <br>
+        <div *ngIf="display">
+            <button (click)="myfunction()">Click for names</button>
+            <br> <br>
+            <div *ngIf="ShowButton">
+                <p>Sahana</p>
+                <p>Allu Group</p>
+            </div>
+        </div>
+        <div style="text-align: center;background-color: coral;" *ngIf="bodyy">
+            <h1>Heyyyy</h1>
+            <h1>Welcome</h1>
+            <h1>This is Angular Course</h1>
+        </div>
+    </div>
+    <div class="col-2" *ngIf="rightshow">
+        <img src="https://upload.wikimedia.org/wikipedia/commons/d/dc/Xemeneia_can_folch_vila_ol%C3%ADmpica_vertical.JPG" alt="" style="height: 400px; width: 80%;">
+
+    </div>
+</div>

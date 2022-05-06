@@ -1,0 +1,16 @@
+.color{
+    color: blue;
+    font-size: 20px;
+}
+table, th, td {
+    border: 1px solid black;
+    border-collapse: collapse;
+  }
+  .success{
+      color:white;
+      background-color: green;
+  }
+  .error{
+      color: white;
+      background-color: red;
+  }
