@@ -1,0 +1,39 @@
+
+<h2> Example for NgIf</h2>
+<button (click)="show()">Click me</button>
+<button (click)="hide()"> Hide me</button>
+<br>
+<div *ngIf="msg">
+    <h3 class="color">Hello</h3>
+    <h3 class="color">I'm Sahana</h3>
+</div>
+
+<h2>NgFor Example using objects</h2>
+<table>
+    <tr>
+        <th>First Name</th>
+        <th>Last Name</th>
+        <th>Age</th>
+        <th>Department</th>
+        <th>Reporting Manager</th>
+    </tr>
+    <tr *ngFor="let item of listOfEmployees">
+        <td>{{item.firstName}}</td>
+        <td>{{item.lastName}}</td>
+        <td>{{item.age}}</td>
+        <td>{{item.department}}</td>
+        <td>{{item.reportingManager}}</td>
+    </tr>
+</table>
+<br>
+<h2>Example for ngModel</h2>
+<input type="text" [(ngModel)] = "showName">
+<h1 *ngIf="display">{{showName}}</h1>
+<button (click)="ngmodel()">Click Here</button>
+<br><br>
+<h2>Example for ngStyle</h2>
+<div [ngClass]="iscolor ? 'success':'error' ">
+    <p>WELCOME</p>
+
+</div>
+

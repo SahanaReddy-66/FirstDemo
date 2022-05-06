@@ -1,0 +1,23 @@
+<h1 style="text-align: center; background-color: aqua;"> <b>Looping</b> </h1>
+<div>
+    <h2>My peoples</h2>
+    <div *ngFor="let item of names; let i=index">
+        <p style="margin-left: 15px;">{{i+1}}&nbsp;&nbsp;{{item.name}}&nbsp;&nbsp;{{item.age}}</p>
+    </div>
+</div>
+<h1>{{title}}</h1>
+<br><br><br>
+<input type="text"[(ngModel)] = "User">
+<p>{{User}}</p>
+<br>
+<input type="text" [(ngModel)]="input">
+<p *ngIf = "errorMsg">The user does not exist!</p>
+<button (click)="ButtonFunction($event)">clickMEE</button>
+<br><br>
+<input type="text" [(ngModel)]="random">
+<button (click)="clickFunction($event)">SeeME</button>
+
+<!-- //ngClass// --> -->
+<div [ngClass]="isColor ? 'success': 'error' " >
+<p>This is the Example for ngClass</p>
+</div>
